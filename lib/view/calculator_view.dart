@@ -87,7 +87,6 @@ class _CalculatorViewState extends State<CalculatorView> {
                           }
                         } else if (symbol == "=") {
                           try {
-                            // Replace % with /100 in the expression
                             String input =
                                 _textController.text.replaceAll('%', '/100');
                             Parser p = Parser();
